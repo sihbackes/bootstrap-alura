@@ -1,0 +1,13 @@
+.imagem-carrosel {
+  object-fit: cover;
+  object-position: 0 70%; 
+  height: 450px;
+}
+
+h1 {
+  color: white;
+}
+
+.font-titulo {
+  font-family: 'Pacifico', cursive;
+}
