@@ -1,7 +1,14 @@
 .imagem-carrosel {
   object-fit: cover;
-  object-position: 0 70%; 
+  object-position: 0 70%;
   height: 450px;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: white;
+}
+
+article {
+  width: 18rem;
 }
 
 h1 {
@@ -9,9 +16,29 @@ h1 {
 }
 
 .font-titulo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: white;
+.cor-especial {
+  color: darkred;
+}
+
+.botao-cor-especial {
+  background-color: darkred;
+  color: white;
+  border-color: darkred;
+}
+
+.botao-cor-especial:hover {
+  background-color: rgb(238, 52, 52) !important;
+  color: white !important;
+}
+
+.borda-cor-especial {
+  border-color: darkred;
+}
+
+.card-posicao-imagem {
+  object-fit: cover;
+  height: 200px;
 }
