@@ -11,3 +11,7 @@ h1 {
 .font-titulo {
   font-family: 'Pacifico', cursive;
 }
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: white;
+}
