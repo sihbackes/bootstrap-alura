@@ -22,7 +22,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">fruta & fruto</a>
           <button
@@ -44,7 +44,13 @@
               <a class="nav-link active" aria-current="page" href="#">início</a>
               <a class="nav-link" href="#">receitas</a>
               <a class="nav-link" href="#">quem somos</a>
-              <a class="nav-link" href="#">contato</a>
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-contato"
+                href="#"
+                >contato</a
+              >
             </div>
           </div>
         </div>
@@ -124,9 +130,11 @@
       ganhar tempo e praticidade
     </p>
 
-    <div class="container">
-      <div class="row">
-        <article class="card borda-cor-especial .col-">
+    <div class="container-fluid bg-light">
+      <div class="row justify-content-center">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-abacate.jpg"
             class="card-img-top card-posicao-imagem"
@@ -141,7 +149,9 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial col">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-kiwi.jpg"
             class="card-img-top card-posicao-imagem"
@@ -156,7 +166,9 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial col">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-mix.jpg"
             class="card-img-top card-posicao-imagem"
@@ -171,7 +183,9 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial col">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-pimentoes.jpg"
             class="card-img-top card-posicao-imagem"
@@ -186,7 +200,9 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial col">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-oriental.jpg"
             class="card-img-top card-posicao-imagem"
@@ -201,7 +217,9 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial col">
+        <article
+          class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4"
+        >
           <img
             src="src/img/receita-beterrabas.jpg"
             class="card-img-top card-posicao-imagem"
@@ -217,14 +235,71 @@
         </article>
       </div>
     </div>
->
+
+    <footer>
+      <p>
+        contato:<a href="mailto:email@frutafruto.com.br"
+          >email@frutafruto.com.br</a
+        >
+      </p>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-contato"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <p>
-      contato:<a href="mailto:email@frutafruto.com.br"
-        >email@frutafruto.com.br</a
-      >
-    </p>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -7,8 +7,8 @@
   background-color: white;
 }
 
-article {
-  width: 18rem;
+.card-largura {
+  max-width: 18rem;
 }
 
 h1 {
