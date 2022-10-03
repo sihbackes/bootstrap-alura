@@ -236,11 +236,14 @@
       </div>
     </div>
 
-    <footer>
-      <p>
-        contato:<a href="mailto:email@frutafruto.com.br"
-          >email@frutafruto.com.br</a
+    <footer class="bg-secondary p-3">
+      <p class="text-light m-0 text-center">
+        contato:<a
+          class="text-light m-0 text-decoration-none"
+          href="mailto:email@frutafruto.com.br"
         >
+          email@frutafruto.com.br
+        </a>
       </p>
     </footer>
 
@@ -255,7 +258,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
             <button
               type="button"
               class="btn-close"
@@ -264,20 +267,33 @@
             ></button>
           </div>
           <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Nome completo</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Insira seu nome completo"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
-                >Email address</label
+                >Email</label
               >
               <input
                 type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
+                placeholder="nome@exemplo.com"
               />
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"
-                >Example textarea</label
+                >Deixe seu comentário</label
               >
               <textarea
                 class="form-control"
@@ -292,9 +308,9 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Close
+              Fechar
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn botao-cor-especial">Enviar</button>
           </div>
         </div>
       </div>
